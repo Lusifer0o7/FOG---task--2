@@ -1,0 +1,43 @@
+.main{
+    padding: 30px;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(10, 40px);
+    width: 400px;
+    margin: 30px auto;
+    padding: 30px;
+    border: 2px solid white;
+  }
+  
+  .grid-item {
+    height: 40px; 
+    border: 1px solid #000000;
+    border-radius: 10px;
+    width: '40px';
+    transition: ease;
+  }
+
+  .grid-item:active{
+    animation: blink 0.25s linear infinite;
+  }
+  
+  
+  .start ,
+  .stop,
+  .reset{
+    width: 60px;
+    height: 30px;
+    margin: 20px;
+  }
+
+  
+
+  @keyframes blink {
+    0%   {opacity: 100%;}
+    25%  {opacity: 0%;}
+    50%  {opacity: 100%;}
+    75%  {opacity: 0%;}
+    100% {opacity: 100%;}
+    
+  }
