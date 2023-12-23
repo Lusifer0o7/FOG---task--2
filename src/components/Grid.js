@@ -1,5 +1,8 @@
 import React, { useState, useEffect, useRef } from 'react';
 import './Grid.css'
+import { FaPlay } from "react-icons/fa";
+import { FaPause } from "react-icons/fa6";
+import { VscDebugRestart } from "react-icons/vsc";
 
 const getRandomColor = () => {
   const colors = ['red', 'green', 'blue', 'black'];
@@ -60,9 +63,9 @@ const ColorBox = () => {
 
       
       <div>
-        <button className='start' onClick={startInterval} >Start</button>
-        <button className='stop' onClick={stopInterval} >Pause</button>
-        <button className='reset' onClick={()=>{setCounter(0)}} >Restart</button>
+        <button className='start' onClick={startInterval} ><FaPlay /></button>
+        <button className='stop' onClick={stopInterval} ><FaPause/></button>
+        <button className='reset' onClick={()=>{setCounter(0)}} ><VscDebugRestart /></button>
       </div>
 
     </div>
